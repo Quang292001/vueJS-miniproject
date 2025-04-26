@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+link demo: https://vue-js-miniproject.vercel.app/product
 # my-app
 
 ## Project setup
@@ -25,4 +25,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 =======
 # vueJS-miniproject
->>>>>>> 4ff875255e5cd46f86bdc01291794347f2e2d2b2
+

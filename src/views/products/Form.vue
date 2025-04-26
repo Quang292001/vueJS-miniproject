@@ -111,7 +111,7 @@ export default {
         save(){
             if(this.validate()){
                 if(this.product.id){
-                    this.$request.put(`http://localhost:8000/api/products/${this.product.id}`,this.product).then(res=>{
+                    this.$request.put(`https://backend-source-codee.onrender.com/api/products/${this.product.id}`,this.product).then(res=>{
                         if(res.data.success){
                             this.$router.push({name:'product.list'})
                             return
@@ -121,7 +121,7 @@ export default {
                     return;
                 }
 
-                this.$request.post('http://localhost:8000/api/products',this.product).then(res=>{
+                this.$request.post('https://backend-source-codee.onrender.com/api/products',this.product).then(res=>{
                    if(res.data.success){
                         this.$router.push({name:'product.list'})
                     return
@@ -131,7 +131,7 @@ export default {
         }
     },
     getProduct(productId){
-        this.$request.get(`http://localhost:8000/api/products/${productId}`).then(res=>{
+        this.$request.get(`https://backend-source-codee.onrender.com/api/products/${productId}`).then(res=>{
                 this.product=res.data
         })
     },

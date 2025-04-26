@@ -48,7 +48,7 @@ export default {
     },
     methods:{
       getAll(){
-        this.$request.get('http://localhost:8000/api/products').then(response => {
+        this.$request.get('https://backend-source-codee.onrender.com/api/products').then(response => {
           this.products = response.data
         })
       },
@@ -61,7 +61,7 @@ export default {
 
 }).then((result) => {
   if (result.isConfirmed) {
-    this.$request.delete(`http://localhost:8000/api/products/${productId}`).then(response => {
+    this.$request.delete(`https://backend-source-codee.onrender.com/api/products/${productId}`).then(response => {
      if(response.data.success){
       this.$swal.fire("Deleted!", "", "success");
       this.getAll()
